@@ -5,10 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import SvgIcon from '@mui/material/SvgIcon';
-
 import { ReactComponent as Logo } from './logo.svg';
-
 import { Breadcrumbs, Icon } from '@mui/material';
 import Link from '@mui/material/Link';
 import Card from '@mui/material/Card';
@@ -44,19 +41,17 @@ function App() {
           <Button color="inherit">Logout</Button>
         </Toolbar>
       </AppBar>
+      
       <Breadcrumbs aria-label="breadcrumb" sx={{marginTop: 2, marginLeft: 8}}>
         <Link underline="hover" color="inherit" href="/">
-          Home
+          HOME
         </Link>
-        <Link
-          underline="hover"
-          color="inherit"
-          href="/material-ui/getting-started/installation/"
-        >
+        <Link underline="hover" color="inherit" href="/">
           Graphics
         </Link>
-        <Typography color="text.primary">Lizard</Typography>
+        <Typography color="text.primary">Lizards</Typography>
       </Breadcrumbs>
+
       <Grid container spacing={2} sx={ {marginTop: 2}} justifyContent={"center"}>
         {Array.from({ length: numberOfCards }).map((_, i) => (
           <Card key={i} sx={{ maxWidth: 345, marginLeft: 0.5, marginRight: 0.5 }}>
